@@ -1,4 +1,4 @@
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav, Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
@@ -7,7 +7,7 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand>Waiter.app</Navbar.Brand>
                 <Nav className="ms-auto">
-                    <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+                    <Button className="bg-primary border-light"><Nav.Link as={NavLink} to="/">Home</Nav.Link></Button>
                 </Nav>
             </Container>
         </Navbar>
