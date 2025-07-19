@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Form, Row, Col, Button, Container } from 'react-bootstrap';
-import { getTableById, modifyTableRequest } from '../../../redux/tablesRedux';
+import { getTableById } from '../../../redux/tablesRedux';
+import { modifyTableRequest } from '../../features/ServerRequests';
 import { useDispatch, useSelector } from 'react-redux';
 
 const statuses = ['Free', 'Busy', 'Reserved', 'Cleaning'];
 
 const Table = () => {
   const { tableId } = useParams();
-  
   //console.log("Table ID: ", tableId);
   //console.log("Table ID Type: ", typeof tableId);
 
@@ -36,15 +36,12 @@ const Table = () => {
     return <div>Loading table data...</div>;
   }
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(modifyTableRequest(tableId, {status, peopleAmount, maxPeopleAmount, bill}));
     alert('Table updated!');
   };
 
-
-    
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
