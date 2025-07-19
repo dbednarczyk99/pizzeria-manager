@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.627ca0d5.css",
-    "main.js": "/static/js/main.b55511dd.js",
-    "index.html": "/index.html",
-    "main.627ca0d5.css.map": "/static/css/main.627ca0d5.css.map",
-    "main.b55511dd.js.map": "/static/js/main.b55511dd.js.map"
+    "main.css": "/pizzeria-manager/static/css/main.627ca0d5.css",
+    "main.js": "/pizzeria-manager/static/js/main.227e545c.js",
+    "index.html": "/pizzeria-manager/index.html",
+    "main.627ca0d5.css.map": "/pizzeria-manager/static/css/main.627ca0d5.css.map",
+    "main.227e545c.js.map": "/pizzeria-manager/static/js/main.227e545c.js.map"
   },
   "entrypoints": [
     "static/css/main.627ca0d5.css",
-    "static/js/main.b55511dd.js"
+    "static/js/main.227e545c.js"
   ]
 }
